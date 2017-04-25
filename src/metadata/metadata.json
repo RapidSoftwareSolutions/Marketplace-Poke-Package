@@ -1,0 +1,1072 @@
+{
+  "package": "Poke",
+  "tagline": "Poke API",
+  "description": "Poke",
+  "image": "http:\/\/logo.clearbit.com\/pokeapi.co",
+  "repo": "https:\/\/github.com\/RapidSoftwareSolutions\/Marketplace-Poke-Package",
+  "keywords": [
+  ],
+  "accounts": {
+    "domain": "pokeapi.co",
+    "credentials": [
+    ]
+  },
+  "blocks": [
+    {
+      "name": "getBerryByName",
+      "description": "Returns information about berry",
+      "args": [
+        {
+          "name": "berryName",
+          "type": "String",
+          "info": "Id or name of the berry",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getBerryFirmnessByName",
+      "description": "Returns information about berries with provided firmness",
+      "args": [
+        {
+          "name": "berryFirmness",
+          "type": "String",
+          "info": "Id or name of the berry firmness",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getBerryFlavorByName",
+      "description": "Returns information about berries with provided flavor",
+      "args": [
+        {
+          "name": "berryFlavor",
+          "type": "String",
+          "info": "Id or name of the berry flavor",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getContestTypeByName",
+      "description": "Contest types are categories judges used to weigh a Pokémon's condition in Pokémon contests. ",
+      "args": [
+        {
+          "name": "contestName",
+          "type": "String",
+          "info": "Id or name of contest type",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getContestEffectById",
+      "description": "Returns contest effect according to provided Id",
+      "args": [
+        {
+          "name": "contestId",
+          "type": "Number",
+          "info": "Id of the contest type",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getSuperContestEffectById",
+      "description": "Returns super contest effect according to provided Id",
+      "args": [
+        {
+          "name": "contestId",
+          "type": "Number",
+          "info": "Id of the contest type",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getEncounterMethodByName",
+      "description": "Methods by which the player might can encounter Pokémon in the wild, e.g., walking in tall grass.",
+      "args": [
+        {
+          "name": "methodName",
+          "type": "String",
+          "info": "Id or name of the method",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getEncounterConditionByName",
+      "description": "Conditions which affect what pokemon might appear in the wild, e.g., day or night.",
+      "args": [
+        {
+          "name": "conditionName",
+          "type": "String",
+          "info": "Id or name of the condition",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getEncounterConditionValueByName",
+      "description": "Encounter condition values are the various states that an encounter condition can have, i.e., time of day can be either day or night.",
+      "args": [
+        {
+          "name": "conditionValueName",
+          "type": "String",
+          "info": "Id or name of the condition value",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getEvolutionChainById",
+      "description": "Evolution chains are essentially family trees. They start with the lowest stage within a family and detail evolution conditions for each as well as Pokémon they can evolve into up through the hierarchy.",
+      "args": [
+        {
+          "name": "chainId",
+          "type": "Number",
+          "info": "Id of the evolution chain",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getEvolutionTriggerByName",
+      "description": "Evolution triggers are the events and conditions that cause a Pokémon to evolve. ",
+      "args": [
+        {
+          "name": "triggerName",
+          "type": "String",
+          "info": "Id or name of the evolution trigger",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getGenerationByName",
+      "description": "A generation is a grouping of the Pokémon games that separates them based on the Pokémon they include. In each generation, a new set of Pokémon, Moves, Abilities and Types that did not exist in the previous generation are released.",
+      "args": [
+        {
+          "name": "generationName",
+          "type": "String",
+          "info": "Id or name of the generation",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getPokedexByName",
+      "description": "A Pokédex is a handheld electronic encyclopedia device; one which is capable of recording and retaining information of the various Pokémon in a given region with the exception of the national dex and some smaller dexes related to portions of a region.",
+      "args": [
+        {
+          "name": "pokedexName",
+          "type": "String",
+          "info": "Id or name of the pokedex",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getVersionByName",
+      "description": "Versions of the games, e.g., Red, Blue or Yellow.",
+      "args": [
+        {
+          "name": "versionName",
+          "type": "String",
+          "info": "Id or name of the version",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getVersionGroupByName",
+      "description": "Version groups categorize highly similar versions of the games.",
+      "args": [
+        {
+          "name": "versionGroupName",
+          "type": "String",
+          "info": "Id or name of the version group",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getItemByName",
+      "description": "An item is an object in the games which the player can pick up, keep in their bag, and use in some manner. They have various uses, including healing, powering up, helping catch Pokémon, or to access a new area.",
+      "args": [
+        {
+          "name": "itemName",
+          "type": "String",
+          "info": "Id or name of the item",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getItemAttributeByName",
+      "description": "Item attributes define particular aspects of items, e.g. \"usable in battle\" or \"consumable\".",
+      "args": [
+        {
+          "name": "itemAttributeName",
+          "type": "String",
+          "info": "Id or name of the item attribute",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getItemCategoryByName",
+      "description": "Item categories determine where items will be placed in the players bag.",
+      "args": [
+        {
+          "name": "itemCategoryName",
+          "type": "String",
+          "info": "Id or name of the item category",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getItemFlingEffectByName",
+      "description": "Item categories determine where items will be placed in the players bag.",
+      "args": [
+        {
+          "name": "itemFlingEffectName",
+          "type": "String",
+          "info": "Id or name of the item fling effect",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getItemPocketByName",
+      "description": "Pockets within the players bag used for storing items by category.",
+      "args": [
+        {
+          "name": "itemPocketName",
+          "type": "String",
+          "info": "Id or name of the item pocket",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMachineById",
+      "description": "Machines are the representation of items that teach moves to Pokémon. They vary from version to version, so it is not certain that one specific TM or HM corresponds to a single Machine.",
+      "args": [
+        {
+          "name": "machineId",
+          "type": "Number",
+          "info": "Id of the machine",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMoveByName",
+      "description": "Moves are the skills of Pokémon in battle. In battle, a Pokémon uses one move each turn. Some moves (including those learned by Hidden Machine) can be used outside of battle as well, usually for the purpose of removing obstacles or exploring new areas.",
+      "args": [
+        {
+          "name": "moveName",
+          "type": "String",
+          "info": "Id or name of the move",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMoveAilmentByName",
+      "description": "Move Ailments are status conditions caused by moves used during battle.",
+      "args": [
+        {
+          "name": "moveAilmentName",
+          "type": "String",
+          "info": "Id or name of the move ailment",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMoveBattleStyleByName",
+      "description": "Styles of moves when used in the Battle Palace.",
+      "args": [
+        {
+          "name": "moveBattleStyleName",
+          "type": "String",
+          "info": "Id or name of the move battle style",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMoveCategoryByName",
+      "description": "Very general categories that loosely group move effects.",
+      "args": [
+        {
+          "name": "moveCategoryName",
+          "type": "String",
+          "info": "Id or name of the move category",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMoveDamageClassByName",
+      "description": "Damage classes moves can have, e.g. physical, special, or non-damaging.",
+      "args": [
+        {
+          "name": "moveDamageClassName",
+          "type": "String",
+          "info": "Id or name of the move damage class",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMoveLearnMethodByName",
+      "description": "Methods by which Pokémon can learn moves.",
+      "args": [
+        {
+          "name": "moveLearnMethodName",
+          "type": "String",
+          "info": "Id or name of the move learn method",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getMoveTargetByName",
+      "description": "Targets moves can be directed at during battle. Targets can be Pokémon, environments or even other moves.",
+      "args": [
+        {
+          "name": "moveTargetName",
+          "type": "String",
+          "info": "Id or name of the move target",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getLocationByName",
+      "description": "Locations that can be visited within the games. Locations make up sizable portions of regions, like cities or routes.",
+      "args": [
+        {
+          "name": "locationName",
+          "type": "String",
+          "info": "Id or name of the location",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getLocationAreaByName",
+      "description": "Location areas are sections of areas, such as floors in a building or cave. Each area has its own set of possible Pokémon encounters.",
+      "args": [
+        {
+          "name": "locationAreaName",
+          "type": "String",
+          "info": "Id or name of the location area",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getPalParkAreaByName",
+      "description": "Areas used for grouping Pokémon encounters in Pal Park. They're like habitats that are specific to Pal Park.",
+      "args": [
+        {
+          "name": "palParkAreaName",
+          "type": "String",
+          "info": "Id or name of the Pal Park area",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getRegionByName",
+      "description": "A region is an organized area of the Pokémon world. Most often, the main difference between regions is the species of Pokémon that can be encountered within them.",
+      "args": [
+        {
+          "name": "regionName",
+          "type": "String",
+          "info": "Id or name of the region",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getAbilityByName",
+      "description": "Abilities provide passive effects for Pokémon in battle or in the overworld. Pokémon have multiple possible abilities but can have only one ability at a time.",
+      "args": [
+        {
+          "name": "abilityName",
+          "type": "String",
+          "info": "Id or name of the ability",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getCharacteristicById",
+      "description": "Characteristics indicate which stat contains a Pokémon's highest IV. A Pokémon's Characteristic is determined by the remainder of its highest IV divided by 5 (gene_modulo).",
+      "args": [
+        {
+          "name": "characteristicId",
+          "type": "Number",
+          "info": "Id of the characteristic",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getGenderByName",
+      "description": "Genders were introduced in Generation II for the purposes of breeding Pokémon but can also result in visual differences or even different evolutionary lines.",
+      "args": [
+        {
+          "name": "genderName",
+          "type": "String",
+          "info": "Id or name of the gender",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getEggGroupByName",
+      "description": "Egg Groups are categories which determine which Pokémon are able to interbreed. Pokémon may belong to either one or two Egg Groups. ",
+      "args": [
+        {
+          "name": "eggGroupName",
+          "type": "String",
+          "info": "Id or name of the egg group",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getGrowthRateByName",
+      "description": "Growth rates are the speed with which Pokémon gain levels through experience. ",
+      "args": [
+        {
+          "name": "growthRateName",
+          "type": "String",
+          "info": "Id or name of the growth rate",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getNatureByName",
+      "description": "Natures influence how a Pokémon's stats grow.",
+      "args": [
+        {
+          "name": "natureName",
+          "type": "String",
+          "info": "Id or name of the nature",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getPokeathlonStatByName",
+      "description": "Pokeathlon Stats are different attributes of a Pokémon's performance in Pokéathlons. In Pokéathlons, competitions happen on different courses; one for each of the different Pokéathlon stats.",
+      "args": [
+        {
+          "name": "pokeathlonStatName",
+          "type": "String",
+          "info": "Id or name of the pokeathlon stat",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getPokemonByName",
+      "description": "Pokémon are the creatures that inhabit the world of the Pokémon games. They can be caught using Pokéballs and trained by battling with other Pokémon.",
+      "args": [
+        {
+          "name": "pokemonName",
+          "type": "String",
+          "info": "Id or name of the pokemon",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getPokemonColorByName",
+      "description": "Colors used for sorting Pokémon in a Pokédex. The color listed in the Pokédex is usually the color most apparent or covering each Pokémon's body. No orange category exists; Pokémon that are primarily orange are listed as red or brown.",
+      "args": [
+        {
+          "name": "pokemonColorName",
+          "type": "String",
+          "info": "Id or name of the pokemon color",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getPokemonFormByName",
+      "description": "Some Pokémon have the ability to take on different forms. At times, these differences are purely cosmetic and have no bearing on the difference in the Pokémon's stats from another; however, several Pokémon differ in stats (other than HP), type, and Ability depending on their form.",
+      "args": [
+        {
+          "name": "pokemonFormName",
+          "type": "String",
+          "info": "Id or name of the pokemon form",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getPokemonHabitatByName",
+      "description": "Habitats are generally different terrain Pokémon can be found in but can also be areas designated for rare or legendary Pokémon.",
+      "args": [
+        {
+          "name": "pokemonHabitatName",
+          "type": "String",
+          "info": "Id or name of the pokemon habitat",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getPokemonShapeByName",
+      "description": "Shapes used for sorting Pokémon in a Pokédex.",
+      "args": [
+        {
+          "name": "pokemonShapeName",
+          "type": "String",
+          "info": "Id or name of the pokemon shape",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getPokemonSpeciesByName",
+      "description": "A Pokémon Species forms the basis for at least one Pokémon. Attributes of a Pokémon species are shared across all varieties of Pokémon within the species. A good example is Wormadam; Wormadam is the species which can be found in three different varieties, Wormadam-Trash, Wormadam-Sandy and Wormadam-Plant.",
+      "args": [
+        {
+          "name": "pokemonSpeciesName",
+          "type": "String",
+          "info": "Id or name of the pokemon species",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getStatByName",
+      "description": "Stats determine certain aspects of battles. Each Pokémon has a value for each stat which grows as they gain levels and can be altered momentarily by effects in battles.",
+      "args": [
+        {
+          "name": "statName",
+          "type": "String",
+          "info": "Id or name of the stat",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getTypeByName",
+      "description": "Types are properties for Pokémon and their moves. Each type has three properties: which types of Pokémon it is super effective against, which types of Pokémon it is not very effective against, and which types of Pokémon it is completely ineffective against.",
+      "args": [
+        {
+          "name": "typeName",
+          "type": "String",
+          "info": "Id or name of the type",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    },
+    {
+      "name": "getLanguageByName",
+      "description": "Languages for translations of API resource information.",
+      "args": [
+        {
+          "name": "languageName",
+          "type": "String",
+          "info": "Id or name of the language",
+          "required": true
+        }
+      ],
+      "callbacks": [
+        {
+          "name": "error",
+          "info": "Error"
+        },
+        {
+          "name": "success",
+          "info": "Success"
+        }
+      ]
+    }
+  ]
+}
