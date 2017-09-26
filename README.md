@@ -5,7 +5,7 @@ Poke
 * Domain: [Poke API](http://pokeapi.co)
 
 ## How to get credentials: 
-0. Poke API does not require key for the moment
+1. Poke API does not require key for the moment
 
 ## Poke.getBerryByName
 Returns information about berry
